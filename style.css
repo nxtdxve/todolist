@@ -8,3 +8,12 @@ body {
 h1 {
     color: white;
 }
+
+label {
+    color: white;
+}
+
+/*delete button has spacaing*/
+button {
+    margin: 2px;
+}

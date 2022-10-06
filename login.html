@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,11 +12,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
-
 <body>
-    <!--make an bootstrap header-->
     <div class="bar">
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -38,44 +34,33 @@
                         <li class="nav-item">
                             <a class="nav-link" href="login.html">Login</a>
                         </li>
-
+                        
                     </ul>
                 </div>
             </nav>
         </header>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <table class="table table-striped table-dark">
-                        <thead>
-                            <tr>
-                                <th scope="col">Id</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Completed</th>
-                                <th scope="col"></th>
-                                <!--for delete button-->
-                            </tr>
-                        </thead>
-                        <tbody id="table">
-                        </tbody>
-                    </table>
-                </div>
+    <!--login page wich bootstrap white font-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <h1>Login</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-4">
             </div>
         </div>
-
-        <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="ModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-    
-
 </body>
-
 </html>
