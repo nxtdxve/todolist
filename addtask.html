@@ -13,7 +13,6 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <!--make an bootstrap header-->
     <div class="bar">
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -33,22 +32,18 @@
                 </div>
             </nav>
         </header>
-        <!--bootstrap table-->
+
+        <!--Make an input for a new task with title submit button-->
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Completed</th>
-                                <th scope="col"></th>
-                            </tr>
-                        </thead>
-                        <tbody id="taskList">
-                        </tbody>
-                    </table>
+                    <form id="newTask">
+                        <div class="form-group">
+                            <label for="title">Enter New Task</label>
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Task">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </div>
 </body>
