@@ -2,4 +2,10 @@
 body {
     text-align: center;
     margin: 0;
+    padding: 0; 
+    background-color: #3c3c3c;
+}
+/*h1 white*/
+h1 {
+    color: white;
 }

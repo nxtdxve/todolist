@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="bar">
@@ -33,18 +34,18 @@
             </nav>
         </header>
 
-        <!--Make an input for a new task with title submit button-->
+        <!--Make an input for a new task with title submit button centered in middle-->
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <h1>Add Task</h1>
                     <form id="newTask">
                         <div class="form-group">
-                            <label for="title">Enter New Task</label>
-                            <input type="text" class="form-control" id="title" name="title" placeholder="Task">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                            <input type="text" class="form-control" id="title" placeholder="Enter Task" name="task">
+                        <button type="submit" class="btn btn-outline-primary">Submit</button>
                     </form>
                 </div>
-            </div>
+                <div class="col-sm-4"></div>
 </body>
 </html>
