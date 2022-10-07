@@ -40,8 +40,8 @@ Start ToDo-List
 
 Test conditions and results are in their corresponding files
 ```python
-  Tests  :  testfälle
-  results:  testprotokoll
+  Tests   :  testfälle
+  Results :  testprotokoll
 ```
 
 
