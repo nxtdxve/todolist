@@ -53,16 +53,17 @@
             <div class="col-sm-4">
                 <h1>Login</h1>
 
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                            placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Password">
-                    </div>
-                    <button type="button" class="btn btn-outline-primary" id="loginButton" onclick="onClickLogin()" >Login</button>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <button type="button" class="btn btn-outline-primary" id="loginButton"
+                    onclick="onClickLogin()">Login</button>
 
             </div>
             <div class="col-sm-4">
@@ -81,7 +82,6 @@
                             <th scope="col">Id</th>
                             <th scope="col">Title</th>
                             <th scope="col">Delete/Update</th>
-                            <!--for delete and update button-->
                         </tr>
                     </thead>
                     <tbody id="table">
@@ -99,13 +99,13 @@
             <div class="col-sm-4">
                 <h1>Add Task</h1>
 
-                    <div class="form-group">
-                        <label for="task">Task name</label>
-                        <input type="text" class="form-control" id="title" placeholder="Enter Tasktitle" name="task">
-                    </div>
-                    <div>
-                        <button type="button"  class="btn btn-outline-primary" id="newTaskButton"  >Add</button>
-                    </div>
+                <div class="form-group">
+                    <label for="task">Task name</label>
+                    <input type="text" class="form-control" id="title" placeholder="Enter Tasktitle" name="task">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-outline-primary" id="newTaskButton">Add</button>
+                </div>
 
             </div>
             <div class="col-sm-4"></div>
@@ -113,7 +113,7 @@
     </div>
 
 
-    
+
     <script src="script.js"></script>
 
 </body>
