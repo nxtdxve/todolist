@@ -155,31 +155,39 @@ function onClickDeleteTask(id) {
 function onClickUpdateTask(id) {
 
     let title = prompt("Enter new title");
+    // title cant be empty but if user press cancel then do nothing
+    if (title == null) {
+        return false;
+    } else if (title == "") {
+        alert("Title cant be empty");
+        return false;
+    } else {
 
-    fetch("http://localhost:3000/auth/jwt/tasks", {
-        method: "PUT",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${localStorage.getItem("token")}`
-        },
-        body: JSON.stringify({
-            id: id,
-            title: title
+        fetch("http://localhost:3000/auth/jwt/tasks", {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${localStorage.getItem("token")}`
+            },
+            body: JSON.stringify({
+                id: id,
+                title: title
+            })
         })
-    })
-        .then((response) => {
-            if (response.status === 200) {
-                return (response.json());
-            } else {
-                throw new Error(response.message);
-            }
-        })
-        .then((data) => {
-            console.log(data)
-            this.indexTask();
-        });
+            .then((response) => {
+                if (response.status === 200) {
+                    return (response.json());
+                } else {
+                    throw new Error(response.message);
+                }
+            })
+            .then((data) => {
+                console.log(data)
+                this.indexTask();
+            });
 
-    return false;
+        return false;
+    }
 }
 
 
@@ -278,16 +286,29 @@ function showNewTaskPage() {
 function onClickLogin() {
     const email = document.getElementById("email");
     const password = document.getElementById("password");
-    this.login(email.value, password.value);
-    return false;
+    var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    // check if email is valid regex
+    if (email.value.match(mailFormat)) {
+        this.login(email.value, password.value);
+        return false;
+    } else {
+        alert("You have entered an invalid email address!");
+        return false;
+    }
 }
 
 function onClickNewTask(e) {
     e.preventDefault();
 
     const title = document.getElementById("title");
-    this.createTask(title.value);
-    return false;
+    if (title.value === "") {
+        alert("Title cannot be empty");
+        return false;
+
+    } else {
+        this.createTask(title.value);
+        return false;
+    }
 }
 
 
