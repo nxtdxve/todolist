@@ -3,17 +3,28 @@ body {
     margin: 0;
     padding: 0;
     background-color: #3c3c3c;
+    font-size: 16px;
+    color: #fff;
+
 }
 
 h1 {
     color: white;
+    font-size: 3em;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
 }
 
 label {
     color: white;
 }
 
-/*delete button has spacaing*/
+hiddenContainer {
+    display: none;
+}
+
 button {
     margin: 2px;
+    padding: 2px;
 }
