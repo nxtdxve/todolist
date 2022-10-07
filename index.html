@@ -11,7 +11,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
@@ -41,24 +40,21 @@
                         <!-- search bar align right-->
                         <li class="nav-item">
                             <form class="form-inline my-2 my-lg-0 order-3">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search doesn't work"
                                     aria-label="Search" id="searchBar">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="searchButtonById">Search</button>
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="button"
+                                    id="searchButtonById">Search</button>
                             </form>
                     </ul>
                 </div>
             </nav>
         </header>
     </div>
-
-
     <div id="DivLogin" class="container hiddenContainer">
         <div class="row">
-            <div class="col-sm-4">
-            </div>
+            <div class="col-sm-4"></div>
             <div class="col-sm-4">
                 <h1>Login</h1>
-
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
@@ -70,14 +66,10 @@
                 </div>
                 <button type="button" class="btn btn-outline-primary" id="loginButton"
                     onclick="onClickLogin()">Login</button>
-
             </div>
-            <div class="col-sm-4">
-            </div>
+            <div class="col-sm-4"></div>
         </div>
     </div>
-
-
     <div id="DivListe" class="container hiddenContainer">
         <div class="row">
             <div class="col-sm-12">
@@ -90,21 +82,16 @@
                             <th scope="col">Delete/Update</th>
                         </tr>
                     </thead>
-                    <tbody id="table">
-                    </tbody>
+                    <tbody id="table"></tbody>
                 </table>
             </div>
         </div>
     </div>
-
-
-
     <div id="DivNewTask" class="container hiddenContainer">
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
                 <h1>Add Task</h1>
-
                 <div class="form-group">
                     <label for="task">Task name</label>
                     <input type="text" class="form-control" id="title" placeholder="Enter Tasktitle" name="task">
@@ -112,16 +99,11 @@
                 <div>
                     <button type="button" class="btn btn-outline-primary" id="newTaskButton">Add</button>
                 </div>
-
             </div>
             <div class="col-sm-4"></div>
         </div>
     </div>
-
-
-
     <script src="script.js"></script>
-
 </body>
 
 </html>
