@@ -38,10 +38,10 @@ Start ToDo-List
 ```
 ## Tests
 
-Test conditions and results are in their corresponding file
-
+Test conditions and results are in their corresponding files
 ```python
   Tests  :  testfälle
   results:  testprotokoll
 ```
+
 
